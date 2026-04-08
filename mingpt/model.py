@@ -70,6 +70,9 @@ class CausalSelfAttention(nn.Module):
         y = self.resid_dropout(self.c_proj(y))
         return y
 
+1+1
+# Este el el cambio que generara un conflicto con el cambio que hice en el branch merge-conflict 
+
 class Block(nn.Module):
     """ an unassuming Transformer block """
 
