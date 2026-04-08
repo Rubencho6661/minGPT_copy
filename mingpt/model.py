@@ -70,8 +70,18 @@ class CausalSelfAttention(nn.Module):
         y = self.resid_dropout(self.c_proj(y))
         return y
 
+# Este es el cambio que hice para probar el funcionamiento de los commits, 
 1+1
-# Este el el cambio que generara un conflicto con el cambio que hice en el branch merge-conflict 
+ITINERARY_SCHEMA = {
+    "type": "object",
+    "properties": {
+        "destination": {"type": "string"},
+        "price_range": {"type": "string"},
+        "ideal_visit_times": {"type": "array", "items": {"type": "string"}},
+        "top_attractions": {"type": "array", "items": {"type": "string"}}
+    },
+    "required": ["destination", "price_range", "ideal_visit_times", "top_attractions"]
+}
 
 class Block(nn.Module):
     """ an unassuming Transformer block """
