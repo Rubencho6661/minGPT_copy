@@ -107,3 +107,5 @@ class Trainer:
             # termination conditions
             if config.max_iters is not None and self.iter_num >= config.max_iters:
                 break
+
+print("DEBUG: esto no debería estar aquí") # esta es mi liena para probar el reset o el revert para ver si se borra o no las actualizaciones
