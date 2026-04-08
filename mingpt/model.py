@@ -70,6 +70,9 @@ class CausalSelfAttention(nn.Module):
         y = self.resid_dropout(self.c_proj(y))
         return y
 
+# Este es el cambio que hice para probar el funcionamiento de los commits, 
+1+1
+
 class Block(nn.Module):
     """ an unassuming Transformer block """
 
